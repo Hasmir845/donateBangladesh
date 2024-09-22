@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+
+    <!-- tailwind cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                btnColor: '#B4F461',
+              },
+              fontFamily: {
+                lexend: 'Lexend'
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body class=" w-full font-lexend">
+
+             <!--* nav start  -->
+             <nav class="  bg-[#F9F7F3] p-3">
+                <div class=" w-11/12  mx-auto flex flex-col gap-4 md:flex-row justify-between items-center pb-4">
+                    <div>
+                        <a href="index.html" target="_blank">
+                            <button class=" btn btn-primar hover:bg-btnColor bg-btnColor border-none text-black px-7">Home</button>
+                        </a>
+                    </div>
+                    <div class=" flex items-center gap-3">
+                        <img src="./assets/logo.png" alt="logo">
+                        <h6>Donate Bangladesh</h6>
+                    </div>
+                    <div class=" flex items-center gap-3"> 
+                        <img src="./assets/coin.png" alt="coin">
+                        <h6><span>5500</span>  BDT</h6>
+                    </div>
+                </div>
+        </nav>
+</body>
+</html>

@@ -30,11 +30,11 @@ function getNoakhaliDonateButtons(id){
                 document.getElementById('noakhali-donation-balance').innerText = newDonationBalance;
         }
             document.getElementById('noakhali-donation-amount').value = '';
-
+            const noakhaliFlood = document.getElementById('noakhali-flood').innerText;
             const history = document.createElement('div');
             history.className = " bg-white mt-3 space-y-3 border border-gray-300 rounded-xl p-3";
             history.innerHTML = `
-            <p>${noakhaliDonationAmount} Taka Is Donated For Flood At Noakhali</p>
+            <p>${noakhaliDonationAmount} Taka Is ${noakhaliFlood}</p>
             <p>${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()} From Bangladesh </p>
             `
             const historyContainer = document.getElementById('history');
@@ -72,9 +72,10 @@ function getFeniDonateButtons(id){
             document.getElementById('feni-donation-amount').value = '';
 
             const history = document.createElement('div');
+            const feniFlood = document.getElementById('feni-flood').innerText;
             history.className = " bg-white mt-3 space-y-3 border border-gray-300 rounded-xl p-3";
             history.innerHTML = `
-            <p>${feniDonationAmount} Taka Is Donated For Flood At Feni</p>
+            <p>${feniDonationAmount} Taka Is ${feniFlood}</p>
             <p>${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()} From Bangladesh</p>
             `
             const historyContainer = document.getElementById('history');
@@ -112,9 +113,10 @@ function getMovementDonateButtons(id){
             document.getElementById('movement-donation-amount').value = '';
 
             const history = document.createElement('div');
+            const quotaMovement = document.getElementById('quota-movement').innerText;
             history.className = " bg-white mt-3 space-y-3 border border-gray-300 rounded-xl p-3";
             history.innerHTML = `
-            <p>${movementDonationAmount} Taka Is Donated For Quota Movement</p>
+            <p>${movementDonationAmount} Taka Is ${quotaMovement}</p>
             <p>${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()} From Bangladesh</p>
             `
             const historyContainer = document.getElementById('history');

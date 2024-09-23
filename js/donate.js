@@ -35,7 +35,7 @@ function getNoakhaliDonateButtons(id){
             history.className = " bg-white mt-3 space-y-3 border border-gray-300 rounded-xl p-3";
             history.innerHTML = `
             <p>${noakhaliDonationAmount} Taka Is Donated For Flood At Noakhali</p>
-            <p>${new Date().toLocaleDateString()}</p>
+            <p>${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()} From Bangladesh </p>
             `
             const historyContainer = document.getElementById('history');
             historyContainer.appendChild(history);
@@ -75,7 +75,7 @@ function getFeniDonateButtons(id){
             history.className = " bg-white mt-3 space-y-3 border border-gray-300 rounded-xl p-3";
             history.innerHTML = `
             <p>${feniDonationAmount} Taka Is Donated For Flood At Feni</p>
-            <p>${new Date().toLocaleDateString()}</p>
+            <p>${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()} From Bangladesh</p>
             `
             const historyContainer = document.getElementById('history');
             historyContainer.appendChild(history);
@@ -115,7 +115,7 @@ function getMovementDonateButtons(id){
             history.className = " bg-white mt-3 space-y-3 border border-gray-300 rounded-xl p-3";
             history.innerHTML = `
             <p>${movementDonationAmount} Taka Is Donated For Quota Movement</p>
-            <p>${new Date().toLocaleDateString()}</p>
+            <p>${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()} From Bangladesh</p>
             `
             const historyContainer = document.getElementById('history');
             historyContainer.appendChild(history);

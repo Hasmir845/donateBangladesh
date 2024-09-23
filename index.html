@@ -31,34 +31,39 @@
 </head>
 <body class=" w-full font-lexend">
 
-             <!--* nav start  -->
+            <header class=" sticky top-0 z-10 bg-gray-50 opacity-95">
+               <!--* nav start  -->
              <nav class="  bg-[#F9F7F3] p-3">
-                <div class=" w-11/12  mx-auto flex flex-col gap-4 md:flex-row justify-between items-center pb-4">
-                    <div>
-                        <a href="blog.html" target="_blank">
-                            <button class=" btn btn-primar hover:bg-btnColor bg-btnColor border-none text-black px-7">Blog</button>
-                        </a>
-                    </div>
-                    <div class=" flex items-center gap-3">
-                        <img src="./assets/logo.png" alt="logo">
-                        <h6>Donate Bangladesh</h6>
-                    </div>
-                    <div class=" flex items-center gap-3"> 
-                        <img src="./assets/coin.png" alt="coin">
-                        <h6><span id="total-balance">5500</span>  BDT</h6>
-                    </div>
-                </div>
-        </nav>
-             <!--* nav end  -->
-    <main class="  w-11/12 mx-auto mb-5">
-        <!-- * btn section -->
-        <section>
-            <div class=" mt-20 flex justify-center gap-4">
-                <button id="donation-btn" class=" border border-gray-300 bg-btnColor py-3 rounded-xl px-5">Donation</button>
-                <button id="history-btn" class=" border border-gray-300 rounded-xl py-3 px-5">History</button>
-            </div>
-        </section>
+              <div class=" w-11/12  mx-auto flex flex-col gap-4 md:flex-row justify-between items-center pb-4">
+                  <div>
+                      <a href="blog.html" target="_blank">
+                          <button class=" btn btn-primar hover:bg-btnColor bg-btnColor border-none text-black px-7">Blog</button>
+                      </a>
+                  </div>
+                  <div class=" flex items-center gap-3">
+                      <img src="./assets/logo.png" alt="logo">
+                      <h6>Donate Bangladesh</h6>
+                  </div>
+                  <div class=" flex items-center gap-3"> 
+                      <img src="./assets/coin.png" alt="coin">
+                      <h6><span id="total-balance">5500</span>  BDT</h6>
+                  </div>
+              </div>
+      </nav>
+           <!--* nav end  -->
+            <!-- * btn section -->
+      <section class=" w-11/12 mx-auto pb-2">
+        <div class=" mt-20 flex justify-center gap-4">
+            <button id="donation-btn" class=" border border-gray-300 bg-btnColor py-3 rounded-xl px-5">Donation</button>
+            <button id="history-btn" class=" border border-gray-300 rounded-xl py-3 px-5">History</button>
+        </div>
+    </section>
 
+  </header>
+            
+
+            </div>
+    <main class="  w-11/12 mx-auto mb-5">
        <section id="card-container">
            <!-- * noakhali section start -->
         <section>

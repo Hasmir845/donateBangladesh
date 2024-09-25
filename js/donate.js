@@ -11,7 +11,7 @@ function getInnerTextValue(id){
 function getNoakhaliDonateButtons(id){
     document.getElementById(id).addEventListener('click',function(){
         const noakhaliDonationAmount = getInputValueById('noakhali-donation-amount');
-        if(noakhaliDonationAmount < 0 || isNaN(noakhaliDonationAmount)){
+        if(noakhaliDonationAmount <= 0 || isNaN(noakhaliDonationAmount)){
             alert ('Invalid Amount')
             return;
         }
@@ -51,7 +51,7 @@ const btnNoakhali = getNoakhaliDonateButtons('btn-noakhali');
 function getFeniDonateButtons(id){
     document.getElementById(id).addEventListener('click',function(){
         const feniDonationAmount = getInputValueById('feni-donation-amount');
-        if(feniDonationAmount < 0 || isNaN(feniDonationAmount)){
+        if(feniDonationAmount <= 0 || isNaN(feniDonationAmount)){
             alert ('Invalid Amount')
             return;
         }
@@ -92,7 +92,7 @@ const btnNFeni = getFeniDonateButtons('feni-btn');
 function getMovementDonateButtons(id){
     document.getElementById(id).addEventListener('click',function(){
         const movementDonationAmount = getInputValueById('movement-donation-amount');
-        if(movementDonationAmount < 0 || isNaN(movementDonationAmount)){
+        if(movementDonationAmount <= 0 || isNaN(movementDonationAmount)){
             alert ('Invalid Amount')
             return;
         }
